@@ -1,9 +1,10 @@
 import './App.css'
+import { MuiButton } from "./components/MuiButton"
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello from the App</h1>
+      <MuiButton />
     </div>
   )
 }
