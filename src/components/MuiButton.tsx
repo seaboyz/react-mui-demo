@@ -1,10 +1,11 @@
-import { Button, IconButton } from "@mui/material"
+import { Button, ButtonGroup, IconButton } from "@mui/material"
 import { Stack } from "@mui/system"
 import SendIcon from '@mui/icons-material/Send'
 
 export const MuiButton = () => {
   return (
     <Stack spacing={4}>
+
       <Stack spacing={2} direction={"row"} >
         <Button variant="text" href="www.google.com">Text</Button>
         <Button variant="contained">Text</Button>
@@ -37,6 +38,28 @@ export const MuiButton = () => {
           <SendIcon />
         </IconButton>
       </Stack>
-    </Stack>
+
+      <Stack direction={"row"} spacing={2}>
+        <ButtonGroup variant="contained" >
+          <Button >Left</Button>
+          <Button >Center</Button>
+          <Button >Right</Button>
+        </ButtonGroup>
+        <ButtonGroup variant="outlined" >
+          <Button >Left</Button>
+          <Button >Center</Button>
+          <Button >Right</Button>
+        </ButtonGroup>
+      </Stack>
+
+      <Stack direction={"row"} spacing={2}>
+        <ButtonGroup variant="text" orientation="vertical" >
+          <Button >Left</Button>
+          <Button >Center</Button>
+          <Button >Right</Button>
+        </ButtonGroup>
+      </Stack>
+
+    </Stack >
   )
 } 
