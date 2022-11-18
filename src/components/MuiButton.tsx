@@ -11,11 +11,11 @@ export const MuiButton = () => {
       </Stack>
 
       <Stack spacing={2} direction={"row"}>
-        <Button variant="contained" color="primary">Primary</Button>
+        <Button variant="outlined" color="primary">Primary</Button>
         <Button variant="contained" color="secondary">Secondary</Button>
-        <Button variant="contained" color="error">Error</Button>
+        <Button variant="outlined" color="error">Error</Button>
         <Button variant="contained" color="warning">Warning</Button>
-        <Button variant="contained" color="info">Info</Button>
+        <Button variant="outlined" color="info">Info</Button>
         <Button variant="contained" color="success">Success</Button>
       </Stack>
     </Stack>
